@@ -40,9 +40,10 @@
 */
 
 - (IBAction)btnGuardar:(id)sender {
-    [nombreArray replaceObjectAtIndex:image withObject:self.txt.text];
+    [nombreArray replaceObjectAtIndex:image withObject:self.txtNombre.text];
     [edadArray replaceObjectAtIndex:image withObject:self.txtEdad.text];
-    [self performanSegueWithIdentifier:@"" sender:self];
+    
+    [self performSegueWithIdentifier:@"BackShow" sender:self];
     
 }
 @end
